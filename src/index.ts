@@ -48,6 +48,7 @@ export {default as RadioButton, RadioButtonProps} from './components/radioButton
 export {default as RadioGroup, RadioGroupProps} from './components/radioGroup';
 export {default as SectionsWheelPicker, SectionsWheelPickerProps} from './components/sectionsWheelPicker';
 export {default as SegmentedControl, SegmentedControlProps, SegmentedControlItemProps} from './components/segmentedControl';
+export {default as SortableList} from './components/sortableList';
 export {default as Switch, SwitchProps} from './components/switch';
 export {default as TabController, TabControllerProps, TabControllerItemProps} from './components/tabController';
 export {default as TabBar, TabBarProps} from './components/TabBar'; //TODO: remove on V7
