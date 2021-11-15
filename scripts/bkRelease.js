@@ -14,6 +14,12 @@ if (isRelease) {
   VERSION = cp.execSync(`buildkite-agent meta-data get version`).toString();
 }
 
+console.log('ethan - isRelease', isRelease);
+console.log('ethan - version', VERSION);
+console.log('ethan - process.env', JSON.stringify(process.env));
+
+return;
+
 const VERSION_TAG = isRelease ? 'latest' : 'snapshot';
 const VERSION_INC = 'patch';
 function run() {
@@ -78,7 +84,6 @@ function tryPublishAndTag(version) {
     }
   }
 }
-
 
 function tagAndPublish(newVersion) {
   console.log(`trying to publish ${newVersion}...`);
